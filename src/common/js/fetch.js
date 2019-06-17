@@ -1,6 +1,7 @@
 // import {
 // 	baseUrl
 // } from './env'
+const baseUrl = '';
 
 export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 	type = type.toUpperCase();
