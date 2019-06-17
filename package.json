@@ -11,6 +11,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "axios": "^0.19.0",
+    "better-scroll": "^1.15.2",
+>>>>>>> fdd996a433cd1e6b5782d259cab5370134cf46e1
     "dayjs": "^1.8.14",
     "fastclick": "^1.0.6",
     "less": "^3.9.0",
