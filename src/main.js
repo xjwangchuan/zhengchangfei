@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import fastclick from 'fastclick';
+import './common/js/rem.js';
 
 Vue.config.productionTip = false
 
