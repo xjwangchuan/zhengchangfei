@@ -11,6 +11,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "dayjs": "^1.8.14",
+    "fastclick": "^1.0.6",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "stylus": "^0.54.5",
