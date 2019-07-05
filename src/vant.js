@@ -24,7 +24,7 @@ import {
   PullRefresh,
   Uploader,
   ImagePreview,
-  Actionsheet
+  // Actionsheet
 } from 'vant';
 
 Vue.use(Dialog);
@@ -50,7 +50,7 @@ Vue.use(List);
 Vue.use(PullRefresh);
 Vue.use(Uploader);
 Vue.use(ImagePreview);
-Vue.use(Actionsheet);
+// Vue.use(Actionsheet);
   
 
       

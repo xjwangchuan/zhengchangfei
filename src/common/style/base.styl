@@ -1,0 +1,34 @@
+@import './variable.styl';
+
+html,body{
+    height:100%;
+    touch-action: none;
+}
+body{
+    background-color: $color-body;
+}
+
+@media (-webkit-min-device-pixel-ratio:1.5),(min-device-pixel-ratio:1.5){
+    .border-1px{
+        &::after{
+            transform: scaleY(0.7);
+        }
+    }
+}
+@media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2){
+    .border-1px{
+        &::after{
+            transform: scaleY(.5);
+        }
+    }
+    .border-1px-top{
+        &::before{
+            transform: scaleY(.5);
+        }
+    }
+    .border-1px-right{
+        &::before{
+            transform: scaleX(.5);
+        }
+    }
+}

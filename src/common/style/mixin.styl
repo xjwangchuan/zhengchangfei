@@ -1,0 +1,96 @@
+// 水平居中
+x-middle(){
+    display: flex;
+    align-items: center;
+}
+// 垂直排列
+y-view(){
+    display: flex;
+    flex-direction: column;
+
+    height:100%;
+}
+// 固定到全屏
+full-fixed(n){
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:n;
+}
+// 移动端像素1px
+border-1px($color){
+    position: relative;
+    &:after{
+        display: block;
+        position: absolute;
+        left:0;
+        bottom:0;
+        width:100%;
+        border-bottom:1px solid $color;
+        content:'';
+    }
+}
+border-1px-all($color){
+    position: relative;
+    &:after{
+        display: block;
+        position: absolute;
+        left:0;
+        bottom:0;
+        width:100%;
+        border:1px solid $color;
+        content:'';
+    }
+}
+border-1px-top($color){
+    position: relative;
+    &:before{
+        display: block;
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        border-bottom:1px solid $color;
+        content:'';
+    }
+}
+border-1px-top-dashed($color){
+    position: relative;
+    &:before{
+        display: block;
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        border-bottom:1px dashed $color;
+        content:'';
+    }
+}
+border-1px-right($color){
+    position: relative;
+    &:before{
+        display: block;
+        position: absolute;
+        top:0;
+        right: 0;
+        height :100%;
+        border-right:1px solid $color;
+        content:'';
+    }
+}
+
+// 文字超出省略号
+text-over(){
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+// 滚动
+scrolling(){
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
