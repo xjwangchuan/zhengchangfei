@@ -1,7 +1,7 @@
 <template>
-  <div class="header">
+  <div class="header bg-white">
     <div class="header-title">
-      <div class="btn-left" v-if="btnLeft">
+      <div class="btn-left" v-if="btnLeft" @click="goBack">
         <slot name="left">
           <van-icon name="arrow-left" />
         </slot>
@@ -14,10 +14,10 @@
         <span class="tab-pill">
             <div class="tab-pill-box">
                 <div class="tab-pill-text" @click="tabChange(0)" :class="{'actives': tabActive==0}">
-                    <span>左边</span>
+                    <span v-html="headerL"></span>
                 </div>
                 <div class="tab-pill-text"  @click="tabChange(1)" :class="{'actives': tabActive==1}">
-                    <span>右边</span>
+                    <span v-html="headerR"></span>
                 </div>
             </div>
         </span>
@@ -48,6 +48,14 @@
 export default {
   props:{
     title:{
+      type:String,
+      default:''
+    },
+    headerL:{
+      type:String,
+      default:''
+    },
+    headerR:{
       type:String,
       default:''
     },
@@ -92,11 +100,14 @@ export default {
   methods:{
     tabChange: function (i) {
       this.tabActive = i;
-      console.log(i)
+      this.$emit('headerClick',i);
     },
     onSearch:function (param) { 
       console.log(123)
-     }
+    },
+    goBack:function (param) { 
+      this.$router.go(-1);
+    }
   },
   components: {
     // [Icon.name]:Icon
@@ -120,6 +131,7 @@ export default {
     .title
       font-size 0.5rem
       line-height 1rem
+      background-color #fafbfd
     .btn-left
       position: absolute;
       top: 0;
@@ -159,7 +171,7 @@ export default {
         height 0.6rem   
         display: inline-block;
         vertical-align: middle;
-        margin-top -0.2rem
+        margin-top -0.1rem
         line-height: 0.6rem;
         border-radius: 0.64rem;
         border: 1px solid #aa1d4f;

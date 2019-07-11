@@ -1,8 +1,16 @@
 <template>
   <!-- <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback"> -->
-  <swiper :options="swiperOption" class="wrapper" ref="mySwiper">
+  <swiper :options="swiperOption" class="wrapper bg-white" ref="mySwiper">
     <!-- slides -->
     <swiper-slide>
+      <router-link tag="div" to="/Fxl">
+        <div class="tuBi">
+          <img src="../common/images/tubiao.png" alt="">
+        </div>
+      </router-link>
+      <div class="wenHao">
+        <img src="../common/images/wenhao.png" alt="">
+      </div>
       <div id="fangxinglv" class="myChart"></div>
       <div class="databox">
         <div class="databox-item">
@@ -35,6 +43,14 @@
       </div>
     </swiper-slide>
     <swiper-slide>
+      <router-link tag="div" to="/Fxl">
+        <div class="tuBi">
+          <img src="../common/images/tubiao.png" alt="">
+        </div>
+      </router-link>
+      <div class="zt">
+        <img src="../common/images/wenhao.png" alt="">
+      </div>
       <div id="shifafangxing" class="myChart"></div>
       <div class="databox">
         <div class="databox-item">
@@ -67,6 +83,14 @@
       </div>
     </swiper-slide>
     <swiper-slide>
+      <router-link tag="div" to="/Fxl">
+        <div class="tuBi">
+          <img src="../common/images/tubiao.png" alt="">
+        </div>
+      </router-link>
+      <div class="zt">
+        <img src="../common/images/wenhao.png" alt="">
+      </div>
       <div id="zongtizhixing" class="myChart"></div>
       <div class="databox">
         <div class="databox-item">
@@ -367,6 +391,30 @@ export default {
     background-color: #E1E1E1;
     width: 0.4rem;
     border-radius 0.4rem
+  .tuBi
+    position: relative;
+    img
+      width: 0.4rem;
+      position: absolute;
+      right: 1rem;
+      z-index:999;
+      top:0.16rem
+  .zt
+    position: relative;
+    img
+      width: 0.4rem; 
+      position: absolute;
+      right: 0.32rem;  
+      z-index:999;
+      top:0.16rem;
+  .wenHao
+    position: relative;
+    img
+      width: 0.4rem;
+      position: absolute;
+      right: 0.32rem;
+      z-index:999;
+      top:0.16rem;
   .myChart
     // width 6rem
     height 5rem

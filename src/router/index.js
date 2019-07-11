@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 
 const Main = () => import('@/Pages/main/Main')
+const Fxl = () => import('@/Pages/main/Fxl')
 const Option = ()=>import('@/Pages/option/Option')
 const Flight =()=>import('@/Pages/flight/Flight')
 
@@ -25,5 +26,10 @@ export default new Router({
     path: '/flight',
     name:'flight',
     component:Flight,
+  },
+  {
+    path: '/fxl',
+    name: 'fxl',
+    component: Fxl,
   }]
 })
