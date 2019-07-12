@@ -4,11 +4,19 @@
         headerL='进港'
         headerR='出港'
         :tab=true
+        :btnRight=true
         :showRight=2
         @headerClick="hClick"
         >
-        <van-icon slot="right2" name="arrow-left" />
-        <span slot="right2">12</span>
+        <!-- <van-icon slot="right2" name="arrow-left" /> -->
+        <!-- <img src="../../common/images/h-fconcern.png" slot="right2"> -->
+
+        <router-link tag="span" slot="right2" to="/FlightConcern">
+          <img src="../../common/images/h-fconcern.png">
+        </router-link>
+        <router-link tag="span" to="/FlightSearch" slot="right2">
+          <span><img src="../../common/images/h-search.png"></span>
+        </router-link>
         <!-- <span>22</span> -->
       </HeaderTitle>
         <div>

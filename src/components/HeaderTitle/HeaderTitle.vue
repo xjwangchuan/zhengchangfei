@@ -154,6 +154,7 @@ export default {
       padding-right: 0.1rem
       .btn-r 
         height: 1rem;
+        line-height 1rem
         vertical-align middle
         box-sizing:border-box;
         padding: 0.1rem 0.1rem;
@@ -161,9 +162,15 @@ export default {
         span
           display inline-block
           position: relative
+          width 0.5rem
           transform:translateY(-50%);
-          top 50%
+          top 25%
           font-size 0.5rem
+          padding-right 0.15rem
+          img 
+            display inline-block
+
+            line-height 1rem
     .btn-tab
       height 1rem
       line-height 1rem   

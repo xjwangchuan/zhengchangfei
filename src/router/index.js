@@ -6,7 +6,8 @@ const Main = () => import('@/Pages/main/Main')
 const Fxl = () => import('@/Pages/main/Fxl')
 const Option = ()=>import('@/Pages/option/Option')
 const Flight =()=>import('@/Pages/flight/Flight')
-
+const FlightSearch = () => import('@/Pages/flight/FlightSearch')
+const FlightConcern = () => import('@/Pages/flight/FlightConcern')
 Vue.use(Router)
 
 export default new Router({
@@ -31,5 +32,15 @@ export default new Router({
     path: '/fxl',
     name: 'fxl',
     component: Fxl,
+  },
+  {
+    path: '/FlightSearch',
+    name: 'FlightSearch',
+    component: FlightSearch,
+    },
+  {
+    path: '/FlightConcern',
+    name: 'FlightConcern',
+    component: FlightConcern,
   }]
 })
