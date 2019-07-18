@@ -82,6 +82,32 @@
                     </tr>
                 </table>
             </div>
+            <div class="flight-table-box">
+              <div class="flight-table-tab">
+                <table class="flight-table">
+                  <tbody>
+                    <tr class="flight-tr">
+                      <td width="24%">
+                        <div>
+                          <img src="./img/gbiac.png" alt="" class="flight-table-logo">
+                          <span>CV9763</span>
+                        </div>
+                      </td>
+                      <td width="14%">B2209</td>
+                      <td width="18%">北京</td>
+                      <td>21</td>
+                      <td width="18%">
+                        <span class="flight-table-sq">实</span>
+                        <span class="flight-table-text">09:30</span>
+                      </td>
+                      <td width="16%">
+                        <div>起飞</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
           <div ref="chugang" style="display: none">
             <div class="databox">
@@ -223,7 +249,7 @@ export default {
       .flight-table
         border 1px solid #aa1d4f
         width: 100%;  
-        font-size 0.3rem   
+        font-size 0.25rem   
         border-collapse: collapse;
         border-spacing: 0;
         tr
@@ -240,5 +266,47 @@ export default {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+    .flight-table-box
+      overflow-y: auto;
+      position: relative;
+      box-sizing: border-box;
+      // background: aqua;
+      font-size 0.22rem
+      .flight-table 
+        width: 100%;
+        table-layout: fixed;
+        box-sizing: border-box;
+        // font-size 0.25rem
+        tr
+          width 100%
+          border-bottom: 1px solid red;
+          td:first-of-type
+            padding-left 0.1rem
+          td
+            height 0.6rem
+            text-align: left;
+            // padding: 0 0.2rem;
+            word-break: keep-all;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            box-sizing: border-box;
+            .flight-table-logo
+              display: inline-block;
+              width: 0.32rem;
+              height: 0.32rem;
+              vertical-align: middle;
+              margin-top -0.02rem
+          .flight-table-sq
+              display: inline-block;
+              width: 0.28rem;
+              height: 0.28rem;
+              line-height 0.28rem
+              border-radius: 0.05rem;
+              border: 1px solid currentcolor;    
+              text-align center
+
+        // tr:nth-of-type(2n-1)
+        //   background-color: #f6f7f9; 
 </style>
 

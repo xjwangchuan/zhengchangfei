@@ -67,9 +67,21 @@ img{
 }
 input{
 	padding:0;
-
 	outline: none;
 	border:none;
 	border-radius: 0;
 	
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #999 !important;
+}
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #999 !important;
+}
+input:-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #999 !important;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:    #999 !important;
 }

@@ -374,7 +374,7 @@ export default {
     },
     changeAc:function (param) { 
       this.swiper.slideTo(param, 500, false);
-     }
+    }
   }
 }
 </script>
