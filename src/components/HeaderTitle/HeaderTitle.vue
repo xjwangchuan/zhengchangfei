@@ -7,8 +7,8 @@
         </slot>
         <!-- <div>aa</div> -->
       </div>
-      <div class="title" v-html="title" v-if="tit">
-        <!-- <h2>嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯</h2> -->
+      <div class="title" v-if="tit">
+        {{title}}
       </div>
       <div class="btn-tab" tabindex="0" v-if="tab">
         <span class="tab-pill">
@@ -94,7 +94,7 @@ export default {
   data() {
     return {
       tabActive:0,
-      value:''
+      value:'',
     };
   },
   methods:{

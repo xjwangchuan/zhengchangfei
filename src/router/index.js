@@ -8,6 +8,8 @@ const Option = ()=>import('@/Pages/option/Option')
 const Flight =()=>import('@/Pages/flight/Flight')
 const FlightSearch = () => import('@/Pages/flight/FlightSearch')
 const FlightConcern = () => import('@/Pages/flight/FlightConcern')
+const FlightDetail = () => import('@/Pages/flight/FlightDetail')
+const FlightFxl = () => import('@/Pages/flight/FlightFxl')
 Vue.use(Router)
 
 export default new Router({
@@ -42,5 +44,15 @@ export default new Router({
     path: '/FlightConcern',
     name: 'FlightConcern',
     component: FlightConcern,
-  }]
+    },
+  {
+    path: '/FlightDetail',
+    name: 'FlightDetail',
+    component: FlightDetail,
+    },
+  {
+    path: '/FlightFxl',
+    name: 'FlightFxl',
+    component: FlightFxl,
+    }]
 })

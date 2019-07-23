@@ -14,21 +14,21 @@
               <div class="right-t-l">
                 <img src="./img/gbiac.png" alt="">
                 <div class="">
-                  <p>&nbsp;SC8083&nbsp;&nbsp;<p1 style="color: #e3e3e3">|</p1>&nbsp;&nbsp;&nbsp;机位&nbsp;240</p>
+                  <p>&nbsp;SC8083&nbsp;&nbsp;<i style="color: #e3e3e3">|</i>&nbsp;&nbsp;&nbsp;机位&nbsp;240</p>
                 </div>
               </div>
             </div>
             <div class="right-b">
               <div class="b1">
-                <h2>厦门</h2>
-                <p1 class="p1">计划时间</p1>
-                <p2 class="p2">07:25</p2>
+                <h2 class="city">厦门</h2>
+                <i class="p1">计划时间</i>
+                <i class="p2">07:25</i>
               </div>
               <div class="deco-box"><div class="deco-bar"></div></div>
               <div class="b3">
-                <h2>郑州</h2>
-                <p2 class="p2">09:34</p2>
-                <p1 class="p1">实际时间</p1>
+                <h2 class="city">郑州</h2>
+                <i class="p2">09:34</i>
+                <i class="p1">实际时间</i>
               </div>
             </div>
             <div class="reson">
@@ -106,10 +106,12 @@ export default {
                 display inline-block
                 color #999
                 font-size 0.2rem
+                font-style:normal
               .p2
                 margin-top -0.1rem 
                 color: #333; 
                 font-size 0.2rem
+                font-style:normal
             .deco-box 
               // padding-bottom: .3rem;   
               flex 1
@@ -152,9 +154,11 @@ export default {
                 margin-top: 0.4em;
                 color: #333;
                 font-size: 0.2rem;
+                font-style:normal
               .p1
                 color: #999;  
                 font-size: 0.2rem;
+                font-style:normal
           .reson
             padding: 0.2rem 0;
             color: #ac1f51;

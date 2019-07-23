@@ -84,26 +84,44 @@
             </div>
             <div class="flight-table-box">
               <div class="flight-table-tab">
-                <table class="flight-table">
+                <table class="flight-table" cellspacing="0">
                   <tbody>
-                    <tr class="flight-tr">
-                      <td width="24%">
-                        <div>
-                          <img src="./img/gbiac.png" alt="" class="flight-table-logo">
-                          <span>CV9763</span>
-                        </div>
-                      </td>
-                      <td width="14%">B2209</td>
-                      <td width="18%">北京</td>
-                      <td>21</td>
-                      <td width="18%">
-                        <span class="flight-table-sq">实</span>
-                        <span class="flight-table-text">09:30</span>
-                      </td>
-                      <td width="16%">
-                        <div>起飞</div>
-                      </td>
-                    </tr>
+                    <router-link tag="tr" class="flight-tr" to="/FlightDetail">
+                        <td width="24%">
+                          <div>
+                            <img src="./img/gbiac.png" alt="" class="flight-table-logo">
+                            <span>CV9763</span>
+                          </div>
+                        </td>
+                        <td width="14%">B2209</td>
+                        <td width="18%">北京</td>
+                        <td>21</td>
+                        <td width="18%">
+                          <span class="flight-table-sq">实</span>
+                          <span class="flight-table-text">09:30</span>
+                        </td>
+                        <td width="16%">
+                          <div>起飞</div>
+                        </td>
+                    </router-link>
+                    <router-link tag="tr" class="flight-tr" to="/FlightDetail">
+                        <td width="24%">
+                          <div>
+                            <img src="./img/gbiac.png" alt="" class="flight-table-logo">
+                            <span>CV9763</span>
+                          </div>
+                        </td>
+                        <td width="14%">B2209</td>
+                        <td width="18%">北京</td>
+                        <td>21</td>
+                        <td width="18%">
+                          <span class="flight-table-sq">实</span>
+                          <span class="flight-table-text">09:30</span>
+                        </td>
+                        <td width="16%">
+                          <div>起飞</div>
+                        </td>
+                    </router-link>
                   </tbody>
                 </table>
               </div>
@@ -272,6 +290,10 @@ export default {
       box-sizing: border-box;
       // background: aqua;
       font-size 0.22rem
+      .flight-table tr:nth-of-type(2n)
+        background-color: #fff;
+      .flight-table tr:nth-of-type(2n-1)
+        background-color: #f6f7f9;
       .flight-table 
         width: 100%;
         table-layout: fixed;

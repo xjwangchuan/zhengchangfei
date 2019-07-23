@@ -13,7 +13,7 @@
       </div>
       <div id="fangxinglv" class="myChart"></div>
       <div class="databox">
-        <div class="databox-item">
+        <div class="databox-item" @click="fxl(1)">
           <div class="item1 main_blue">
             <span>142</span>
           </div>
@@ -22,7 +22,7 @@
             <span>已执行</span>
           </div>
         </div>
-        <div class="databox-item">
+        <div class="databox-item" @click="fxl(2)">
           <div class="item1 main_green">
             <span>142</span>
           </div>
@@ -31,7 +31,7 @@
             <span>正常</span>
           </div>
         </div>
-        <div class="databox-item">
+        <div class="databox-item" @click="fxl(3)">
           <div class="item1 main_yellow">
             <span>142</span>
           </div>
@@ -53,7 +53,7 @@
       </div>
       <div id="shifafangxing" class="myChart"></div>
       <div class="databox">
-        <div class="databox-item">
+        <div class="databox-item" @click="fxl(4)">
           <div class="item1 main_blue">
             <span>142</span>
           </div>
@@ -62,7 +62,7 @@
             <span>已执行</span>
           </div>
         </div>
-        <div class="databox-item">
+        <div class="databox-item" @click="fxl(5)">
           <div class="item1 main_green">
             <span>142</span>
           </div>
@@ -71,7 +71,7 @@
             <span>正常</span>
           </div>
         </div>
-        <div class="databox-item">
+        <div class="databox-item" @click="fxl(6)">
           <div class="item1 main_yellow">
             <span>142</span>
           </div>
@@ -374,6 +374,9 @@ export default {
     },
     changeAc:function (param) { 
       this.swiper.slideTo(param, 500, false);
+    },
+    fxl:function(i){
+      this.$router.push({path:'/FlightFxl',query:{fxl:i}});
     }
   }
 }
