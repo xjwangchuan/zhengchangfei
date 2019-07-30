@@ -10,6 +10,10 @@ const FlightSearch = () => import('@/Pages/flight/FlightSearch')
 const FlightConcern = () => import('@/Pages/flight/FlightConcern')
 const FlightDetail = () => import('@/Pages/flight/FlightDetail')
 const FlightFxl = () => import('@/Pages/flight/FlightFxl')
+const FlowList = () => import('@/Pages/flow/FlowList')
+const FlowDetail = () => import('@/Pages/flow/FlowDetail')
+const ReleaseObserve = () => import('@/Pages/releaseObserve/ReleaseObserve')
+const Weather = () => import('@/Pages/weather/Weather')
 Vue.use(Router)
 
 export default new Router({
@@ -54,5 +58,25 @@ export default new Router({
     path: '/FlightFxl',
     name: 'FlightFxl',
     component: FlightFxl,
+    },
+  {
+    path: '/FlowList',
+    name: 'FlowList',
+    component: FlowList,
+    },
+  {
+    path: '/FlowDetail',
+    name: 'FlowDetail',
+    component: FlowDetail,
+    },
+  {
+    path: '/ReleaseObserve',
+    name: 'ReleaseObserve',
+    component: ReleaseObserve,
+    },
+  {
+    path: '/Weather',
+    name: 'Weather',
+    component: Weather,
     }]
 })

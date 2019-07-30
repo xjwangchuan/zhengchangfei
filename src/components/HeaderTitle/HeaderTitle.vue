@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="sou" v-if="sous">
-      <van-search placeholder="请输入搜索关键词" @search="onSearch" v-model="value"/>
+      <van-search :placeholder="placeholder"  @search="onSearch" v-model="value"/>
     </div>
   </div>
 </template>
@@ -48,6 +48,10 @@
 export default {
   props:{
     title:{
+      type:String,
+      default:''
+    },
+    placeholder:{
       type:String,
       default:''
     },
@@ -122,6 +126,11 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  .sou
+    .van-search
+      background-color: #f6f7f9 !important
+      .van-search__content
+        background-color: #fff;
   .header-title
     position relative
     height 1rem

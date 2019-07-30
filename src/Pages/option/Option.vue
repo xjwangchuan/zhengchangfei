@@ -17,30 +17,32 @@
             <span class="fc-title fc-md">运营实况</span>
           </div>
           <div class="option-box">
-            <div class="option-item">
+            <router-link tag="div" class="option-item" to="/FlowList">
+            <!-- <div class="option-item"> -->
               <div class="option-icon">
                 <i class="icon-30-flowControl"></i>
               </div>
               <div class="option-item-text">
                 <span>流控信息</span>
               </div>
-            </div>
-            <div class="option-item">
+            <!-- </div> -->
+            </router-link>
+            <router-link tag="div" class="option-item" to="/ReleaseObserve">
               <div class="option-icon">
                 <i class="icon-30-releaseObserve"></i>
               </div>
               <div class="option-item-text">
                 <span>正常性监控</span>
               </div>
-            </div>
-            <div class="option-item">
+            </router-link>
+            <router-link tag="div" class="option-item" to="/Weather">
               <div class="option-icon">
                 <i class="icon-30-weather"></i>
               </div>
               <div class="option-item-text">
                 <span>跑道气象</span>
               </div>
-            </div>            
+            </router-link>            
           </div>
         </div>
         <!-- <div class="option-type pd-lr">
