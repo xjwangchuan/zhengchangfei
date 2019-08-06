@@ -306,7 +306,7 @@ export default {
           .divide-line
             height 0.3rem
             // width 100%
-            border-bottom #e3e3e3 1px dashed 
+            border-bottom #e3e3e3 2px dashed 
             margin 0 0.2rem 0.3rem 0.2rem
         .flight-message
           padding-top: 0.4rem;    
@@ -427,6 +427,7 @@ export default {
         border-top-right-radius: 0.4rem;
         border-bottom-right-radius:0.4rem;
         margin-right: 0.2rem; 
+        margin-top -0.04rem
         padding-bottom 0.1rem
         p
           padding: 0rem 0.6rem 0.1rem 0.2rem;

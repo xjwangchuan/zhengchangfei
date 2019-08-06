@@ -120,8 +120,7 @@ export default {
         // text-overflow: ellipsis;
         input 
           font-size 0.3rem
-        // input::placeholder
-        //   color #999
+          border-bottom: 1px solid #e1e1e1
     .footer
       box-sizing border-box
       position: fixed;

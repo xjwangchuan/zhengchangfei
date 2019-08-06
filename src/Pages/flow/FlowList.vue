@@ -10,7 +10,7 @@
     </HeaderTitle>
     <div>
       <ul class="myul bc-bg">
-        <li class="myli bg-white" @click="unclick(item,index)">
+        <router-link tag="li" class="myli bg-white" to="/FlowDetail" @click="unclick(item,index)">
           <div class="top">
             <div class="top-bg"></div>
             <div class="top-div">
@@ -22,7 +22,7 @@
             <span class="">发布者：广州</span>
             <span class="">影响时间：08:20 --- 10:00</span>
           </div>
-        </li>
+        </router-link>
                 <li class="myli bg-white" @click="unclick(item,index)">
           <div class="top">
             <div class="top-bg"></div>
