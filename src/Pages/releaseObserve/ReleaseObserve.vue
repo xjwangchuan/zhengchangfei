@@ -72,6 +72,7 @@ export default {
   },
   data() {
     return {
+<<<<<<< HEAD
       option:{
         tooltip: {
             trigger: 'item',
@@ -133,6 +134,9 @@ export default {
       },
       data1:[{name:"华北"},{name:"东北"},{name:"华东"},{name:"中南"},{name:"西南"},{name:"西北"},{name:"国际"},{name:"其他"}],
       data2:[{name:"华北",value:3},{name:"东北",value:4},{name:"华东",value:6},{name:"中南",value:14},{name:"西南",value:10},{name:"西北",value:3},{name:"国际",value:4},{name:"其他",value:0}]
+=======
+      a:2
+>>>>>>> fbdba50225d0a53245b3c68afeb5cdfc3d27f189
     };
   },
   mounted(){
