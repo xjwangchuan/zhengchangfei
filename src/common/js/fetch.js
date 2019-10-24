@@ -1,7 +1,7 @@
 // import {
 // 	baseUrl
 // } from './env'
-const baseUrl = '';
+const baseUrl = "http://10.10.236.215:9090/jeecg-zhengzhou";
 
 export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 	type = type.toUpperCase();
@@ -25,7 +25,8 @@ export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 			method: type,
 			headers: {
 				'Accept': 'application/json',
-				'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'token': '87394f1aa0824c5cac62d68726af7dbe@*@bAnT1DU7cnSK1MyR13mZFg'
 			},
 			mode: "cors",
 			cache: "force-cache"

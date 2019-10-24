@@ -164,6 +164,8 @@
     </div>
 </template>
 <script>
+// import axios from "axios"
+import {getLogin} from '../../service/getData'
 import footgudie from '../../components/footer/FooterGuide'
 import HeaderTitle from '../../components/HeaderTitle/HeaderTitle'
 import MainSwiper from '../../components/MainSwiper'
@@ -211,8 +213,29 @@ export default {
   mounted(){
     var that = this;
     that.drawLine();  // 初始化
+    that.login();
+  },
+  created () {
+
   },
   methods: {
+    // ...mapMutations(['changeLogin']),
+    login:function(){
+      this.$axios({
+        method:'post',
+        url:'http://120.194.12.26:8080/zhengzhou/focUserController.do?appLogin',
+        headers:{
+          'token':'87394f1aa0824c5cac62d68726af7dbe@*@bAnT1DU7cnSK1MyR13mZFg',
+          'Content-Type':'application/x-www-form-urlencoded'
+        }
+      }).then(res=>{
+          this.msg = res.data;
+          console.log(res)
+          console.log(11111111111111)
+        }).catch(function (error) {
+          console.log("error init."+error)
+        })
+    },
     drawLine:function (param) { 
       let flightChart1 = this.$echarts.init(document.getElementById("jin"));
       flightChart1.setOption(this.option);
