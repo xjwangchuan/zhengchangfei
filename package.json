@@ -19,7 +19,7 @@
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "stylus": "^0.54.5",
-    "vant": "^2.0.0",
+    "vant": "^2.1.8",
     "vue": "^2.5.2",
     "vue-awesome-swiper": "^2.6.7",
     "vue-router": "^3.0.1",
